@@ -8,14 +8,13 @@ import plotly.express as px
 import plotly.graph_objects as go
 import streamlit as st
 
-from delay_engine import critical_path_risks, lookahead_activities, planned_vs_actual_summary
+from .delay_engine import critical_path_risks, lookahead_activities, planned_vs_actual_summary
 
-from executive_summary import answer_copilot, health_pack, pm_brief, recommended_actions
+from .executive_summary import answer_copilot, health_pack, pm_brief, recommended_actions
 
-from material_engine import critical_materials, enrich_inventory, inventory_kpis, vendor_performance
+from .material_engine import critical_materials, enrich_inventory, inventory_kpis, vendor_performance
 
-from risk_engine import alert_rules, critical_path_delays, milestones_at_risk, top_risks
-
+from .risk_engine import alert_rules, critical_path_delays, milestones_at_risk, top_risks
 
 RAG_COLORS = {"Green": "#16a34a", "Amber": "#d97706", "Red": "#dc2626"}
 
