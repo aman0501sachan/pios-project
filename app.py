@@ -5,7 +5,7 @@ from pathlib import Path
 
 import pandas as pd
 
-from dashboard import render_app
+from modules.dashboard import render_app
 
 
 BASE_DIR = Path(__file__).resolve().parent
